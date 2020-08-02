@@ -1,0 +1,15 @@
+{
+  "name": "mm.util.js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:467057463/mm.util.js.git",
+  "author": "m2 <467057463@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "dependencies": {
+    "rollup": "^2.23.0",
+    "rollup-plugin-json": "^4.0.0"
+  }
+}
