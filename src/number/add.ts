@@ -1,6 +1,6 @@
 /**
- * 数学加函数
+ * 加法函数
  */
 export default (a: number, b: number): number => {
-  return a + b;
+  return a + b + 11111;
 };
