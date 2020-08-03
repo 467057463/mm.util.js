@@ -1,15 +1,39 @@
 {
-  "name": "mm.util.js",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "mm.util",
+  "version": "0.0.3",
+  "main": "lib/index.js",
+  "types": "types/index.d.ts",
   "repository": "git@github.com:467057463/mm.util.js.git",
   "author": "m2 <467057463@qq.com>",
   "license": "MIT",
   "scripts": {
-    "build": "rollup -c"
+    "lint": "eslint 'src/**/*.{js,ts}'",
+    "build:types": "tsc",
+    "dev": "rollup -w -c --environment FORMAT:esm",
+    "build:esm": "rollup -c --environment FORMAT:esm",
+    "build:umd": "rollup -c --environment FORMAT:umd",
+    "build:min": "rollup -c --environment FORMAT:min",
+    "build:cjs": "rollup -c --environment FORMAT:cjs",
+    "build": "rimraf lib/* types/* && run-p build:types build:esm build:umd build:min build:cjs"
   },
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-typescript": "^7.10.4",
+    "@rollup/plugin-node-resolve": "^8.4.0",
+    "@typescript-eslint/eslint-plugin": "^3.7.1",
+    "@typescript-eslint/parser": "^3.7.1",
+    "eslint": "^7.6.0",
+    "eslint-config-alloy": "^3.7.4",
+    "lodash.merge": "^4.6.2",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.0.5",
+    "rimraf": "^3.0.2",
     "rollup": "^2.23.0",
-    "rollup-plugin-json": "^4.0.0"
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-uglify": "^6.0.4",
+    "typescript": "^3.9.7"
   }
 }
