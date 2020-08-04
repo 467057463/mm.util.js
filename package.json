@@ -16,7 +16,9 @@
     "build:cjs": "rollup -c --environment FORMAT:cjs",
     "build": "rimraf lib/* types/* && run-p build:types build:esm build:umd build:min build:cjs"
   },
-  "dependencies": {},
+  "dependencies": {
+    "rollup-plugin-dts": "^1.4.9"
+  },
   "devDependencies": {
     "@babel/core": "^7.11.0",
     "@babel/preset-env": "^7.11.0",
