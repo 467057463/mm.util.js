@@ -7,16 +7,13 @@
   "author": "m2 <467057463@qq.com>",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint 'src/**/*.{js,ts}'",
-    "build:types": "tsc",
-    "dev": "rollup -w -c --environment FORMAT:esm",
-    "build:esm": "rollup -c --environment FORMAT:esm",
-    "build:umd": "rollup -c --environment FORMAT:umd",
-    "build:min": "rollup -c --environment FORMAT:min",
-    "build:cjs": "rollup -c --environment FORMAT:cjs",
-    "build": "rimraf lib/* types/* && run-p build:types build:esm build:umd build:min build:cjs"
+    "build:types": "rm -rf types && tsc",
+    "dev": "rollup -wc",
+    "build": "rollup -c"
   },
-  "dependencies": {},
+  "dependencies": {
+    "rollup-plugin-dts": "^1.4.9"
+  },
   "devDependencies": {
     "@babel/core": "^7.11.0",
     "@babel/preset-env": "^7.11.0",
