@@ -1,6 +1,7 @@
-import { add, cat } from './add';
+import add from './number/add';
+import sub from './number/sub';
 
 export default {
   add,
-  cat
-}
+  sub
+};

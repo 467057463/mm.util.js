@@ -1,4 +1,4 @@
-import babel from 'rollup-plugin-babel';
+import babel from '@rollup/plugin-babel';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 
 const extensions = ['.js', '.ts'];
@@ -14,7 +14,7 @@ export default {
       format: 'umd',
       file: './lib/index.umd.js',
       name: 'mmUtil'
-    },
+    }
   ],
   plugins: [
     nodeResolve({
@@ -26,4 +26,4 @@ export default {
       extensions
     })
   ]
-}
+};
