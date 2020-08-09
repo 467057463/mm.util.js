@@ -13,6 +13,11 @@ const sub = (num1: number, num2: number, ...otherNums: number[]): number => {
   if (otherNums.length) {
     return sub(sub(num1, num2), otherNums[0], ...otherNums.slice(1));
   }
+  // 只有一个参数时返回改参数
+  if (num1 !== undefined && num2 === undefined) {
+    return num1;
+  }
+
   const baseNum = 10 ** Math.max(decimalLength(num1), decimalLength(num2));
   return (num1 * baseNum - num2 * baseNum) / baseNum;
 };
