@@ -2,7 +2,7 @@
   "inputFiles": "./src",
   "mode": "modules",
   "out": "docs",
-  "plugin": "typedoc-plugin-markdown",
+  "plugin": ["typedoc-plugin-markdown"],
   "theme": "vuepress",
   "disableOutputCheck": true
 }

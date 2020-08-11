@@ -1,18 +1,17 @@
 import decimalLength from '../internal/number/decimalLength';
 // import repair from '../internal/number/repair';
 
-
 /**
  * 精确加法
  * @param num1 加数
  * @param num2 加数
  * @returns 返回相加的和
  * @example
+ * ``` js
  *  mmUtil.add(0.1, 0.2) //0.3  不是0.3000000001
- * @example
  *  mmUtil.add(1, 1, 2) //4  多个数相加
- * @example 
- * mmUtil.add(10) //10 
+ *  mmUtil.add(10) //10
+ * ```
  */
 const add = (num1: number, num2: number, ...otherNums: number[]): number => {
   if (otherNums.length) {

@@ -10,9 +10,11 @@
     "dev": "rollup -wc",
     "build": "rollup -c",
     "types": "tsc",
-    "docs": "typedoc --options typedoc.json",
     "test": "jest",
-    "docs:dev": "vuepress dev docs"
+    "docs": "typedoc --options typedoc.json",
+    "docs:change": "onchange 'src/**/*.ts' -- typedoc --options typedoc.json",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "dependencies": {},
   "devDependencies": {
@@ -27,6 +29,7 @@
     "eslint": "^7.6.0",
     "eslint-config-alloy": "^3.7.4",
     "jest": "^26.2.2",
+    "onchange": "^7.0.2",
     "prettier": "^2.0.5",
     "rollup": "^2.23.0",
     "typedoc": "^0.17.8",
