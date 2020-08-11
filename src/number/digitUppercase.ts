@@ -1,22 +1,47 @@
-let fraction = ['角', '分'];
-let digit = ['零', '壹', '贰', '叁', '肆', '伍', '陆', '柒', '捌', '玖'];
-let unit = [
+/**
+ * @internal
+ */
+const fraction = ['角', '分'];
+
+/**
+ * @internal
+ */
+const digit = ['零', '壹', '贰', '叁', '肆', '伍', '陆', '柒', '捌', '玖'];
+
+/**
+ * @internal
+ */
+const unit = [
   ['元', '万', '亿'],
   ['', '拾', '佰', '仟']
 ];
 
-// 向右移位
+/**
+ *  向右移位
+ * @internal
+ * @param number 
+ * @param digit 
+ */
 function shiftRight(number: number, digit: number) {
   let value = number.toString().split('e');
   return Number(value[0] + 'e' + (value[1] ? Number(value[1]) + digit : digit));
 }
 
-// 向左移位
+/**
+ *  向左移位
+ * @internal
+ * @param number 
+ * @param digit 
+ */
 function shiftLeft(number: number, digit: number) {
   let value = number.toString().split('e');
   return Number(value[0] + 'e' + (value[1] ? Number(value[1]) - digit : -digit));
 }
 
+/**
+ * @category number
+ * @param num 
+ */
 const digitUppercase = function (num: number): string {
   let result = '';
   const head = num < 0 ? '欠' : '';

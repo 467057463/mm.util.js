@@ -11,8 +11,8 @@
     "build": "rollup -c",
     "types": "tsc",
     "test": "jest",
-    "docs": "typedoc --options typedoc.json",
-    "docs:change": "onchange 'src/**/*.ts' -- typedoc --options typedoc.json",
+    "docs": "typedoc",
+    "docs:change": "onchange 'src/**/*.ts' -- typedoc",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },

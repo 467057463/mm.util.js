@@ -1,8 +1,17 @@
 {
-  "inputFiles": "./src",
   "mode": "modules",
+  "inputFiles": "./src/index.ts",
+  "name": "mmUtil文档",
+  "stripInternal": true,
   "out": "docs",
-  "plugin": ["typedoc-plugin-markdown"],
+  "disableSources": true,
+  "toc": [
+    "EntryClass",
+    "ImportantInterface"
+  ],
+  "plugin": [
+    "typedoc-plugin-markdown"
+  ],
   "theme": "vuepress",
   "disableOutputCheck": true
 }

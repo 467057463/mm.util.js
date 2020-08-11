@@ -3,6 +3,7 @@ import decimalLength from '../internal/number/decimalLength';
 
 /**
  * 精确加法
+ * @category number 
  * @param num1 加数
  * @param num2 加数
  * @returns 返回相加的和
