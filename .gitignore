@@ -2,4 +2,10 @@ lib/
 yarn-error.log
 node_modules/
 types
-docs
+
+# docs
+!docs/
+docs/*
+!docs/.vuepress/
+docs/.vuepress/*
+!docs/.vuepress/config.js

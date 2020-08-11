@@ -10,8 +10,9 @@
     "dev": "rollup -wc",
     "build": "rollup -c",
     "types": "tsc",
-    "docs": "typedoc --out docs src",
-    "test": "jest"
+    "docs": "typedoc --options typedoc.json",
+    "test": "jest",
+    "docs:dev": "vuepress dev docs"
   },
   "dependencies": {},
   "devDependencies": {
@@ -29,6 +30,8 @@
     "prettier": "^2.0.5",
     "rollup": "^2.23.0",
     "typedoc": "^0.17.8",
-    "typescript": "^3.9.7"
+    "typedoc-plugin-markdown": "^2.4.0",
+    "typescript": "^3.9.7",
+    "vuepress": "^1.5.3"
   }
 }
