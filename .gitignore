@@ -9,3 +9,4 @@ docs/*
 !docs/.vuepress/
 docs/.vuepress/*
 !docs/.vuepress/config.js
+!docs/.vuepress/public
