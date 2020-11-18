@@ -1,6 +1,6 @@
 {
   "name": "mm.util",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "lib/index.js",
   "types": "types/index.d.ts",
   "repository": "git@github.com:467057463/mm.util.js.git",
