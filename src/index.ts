@@ -1,3 +1,5 @@
+import debounce from './function/debounce';
+
 import add from './number/add';
 import sub from './number/sub';
 import mul from './number/mul';
@@ -7,6 +9,7 @@ import random from './number/random';
 import digitUppercase from './number/digitUppercase';
 
 export default {
+  debounce,
   add,
   sub,
   mul,
