@@ -1,13 +1,13 @@
 export default function debounce(fn: Function, wait: number, immediate: boolean){
-  var timer: any;
-  var result: any;
+  let timer: any;
+  let result: any;
   return function(){
      // @ts-ignore
-    var context = this;
-    var args = arguments
+    let context = this;
+    let args = arguments
     if(timer) clearTimeout(timer);
     if(immediate){
-      var callNow = !timer;
+      let callNow = !timer;
       timer = setTimeout(function(){
         timer = null;
       }, wait)

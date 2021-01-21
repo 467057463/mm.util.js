@@ -1,4 +1,5 @@
 import debounce from './function/debounce';
+import throttle from './function/throttle';
 
 import add from './number/add';
 import sub from './number/sub';
@@ -10,6 +11,7 @@ import digitUppercase from './number/digitUppercase';
 
 export default {
   debounce,
+  throttle,
   add,
   sub,
   mul,
