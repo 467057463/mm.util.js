@@ -1,8 +1,8 @@
 import decimalLength from '../internal/number/decimalLength';
-// import repair from '../internal/number/repair';
+
 
 /**
- * 精确加法
+ * 加法
  * @category number 
  * @param num1 加数
  * @param num2 加数

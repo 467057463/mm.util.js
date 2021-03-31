@@ -1,23 +1,5 @@
-const apiSideBar = require('./api-sidebar.json');
+const sidebar = require('./api-sidebar');
 
-const sidebar = apiSideBar[0].children.reduce(function (acc, item) {
-  var items = item.replace('modules/_', '').replace(/_$/, '').split('_');
-  if (items.length === 2) {
-    const nav = [item, items[1]];
-    const modules = acc.find(function (module) {
-      return module.title === items[0];
-    });
-    if (modules) {
-      modules.children.push(nav);
-    } else {
-      acc.push({
-        title: items[0],
-        children: [nav]
-      });
-    }
-  }
-  return acc;
-}, []);
 
 module.exports = {
   title: 'mmUtil',
@@ -27,22 +9,22 @@ module.exports = {
     sidebar,
     sidebarDepth: 0,
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/guide/' },
-      {
-        text: 'External',
-        link: 'https://google.com',
-        items: [
-          { text: 'Chinese', link: '/language/chinese/' },
-          { text: 'Japanese', link: '/language/japanese/' }
-        ]
-      }
+      { text: '首页', link: '/' },
+      { text: '文档', link: '/docs/number/add' },
+      // {
+      //   text: 'External',
+      //   link: 'https://google.com',
+      //   items: [
+      //     { text: 'Chinese', link: '/language/chinese/' },
+      //     { text: 'Japanese', link: '/language/japanese/' }
+      //   ]
+      // }
     ],
     repo: '467057463/mm.util'
   },
-  markdown: {
-    lineNumbers: true
-  },
+  // markdown: {
+  //   lineNumbers: true
+  // },
   head: [
     ['link', { rel: 'icon', href: `/logo.png` }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
