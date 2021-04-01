@@ -18,6 +18,22 @@ yarn add mmUtil
 
 #### 网页引用
 
+[前往lib目录](https://github.com/467057463/mm.util/tree/master/lib)下载对应的格式的文件
+
+* mmutil.es.js 为 es module格式
+
+```html
+<script type="module" src="/path/mmutil.es.js">
+```
+
+* mmutil.umd.js 为通用模块定义
+
+```html
+<script src="/path/mmUtil.umd.js">
+```
+
+* mmutil.min.js 为压缩版本版本适合生成环境使用
+
 ```html
 <script src="/path/mmUtil.min.js">
 ```
