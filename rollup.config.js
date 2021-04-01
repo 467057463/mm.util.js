@@ -18,6 +18,11 @@ export default {
     },
     {
       format: 'umd',
+      file: `./lib/index.umd.js`,
+      name: 'mmUtil'
+    },
+    {
+      format: 'umd',
       file: `./lib/mmutil.${version}.umd.js`,
       name: 'mmUtil'
     }
