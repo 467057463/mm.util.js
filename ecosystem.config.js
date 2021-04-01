@@ -2,8 +2,8 @@ module.exports = {
   apps : [
     {
       name: 'blog_front',
-      script: 'npm',
-      args: 'run start:prod',
+      // script: 'npm',
+      // args: 'run start:prod',
       env: {
         "COMMON_VARIABLE": "true"
       },
