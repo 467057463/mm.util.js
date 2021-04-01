@@ -29,11 +29,11 @@ yarn add mmUtil
 * umd.js 为通用模块定义
 
 ```html
-<script src="/path/mmUtil.version.umd.js">
+<script src="/path/mmutil.version.umd.js">
 ```
 
 * min.js 为压缩版本版本适合生成环境使用
 
 ```html
-<script src="/path/mmUtil.version.min.js">
+<script src="/path/mmutil.version.min.js">
 ```
