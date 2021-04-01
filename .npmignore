@@ -5,7 +5,12 @@ node_modules
 .eslintrc.js
 .gitignore
 .prettierrc.js
+jest.config.js
 rollup.config.js
+rollup.production.js
 tsconfig.json
+typedoc.json
 yarn.lock
 docs
+demo
+test
