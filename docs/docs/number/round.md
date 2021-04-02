@@ -1,4 +1,4 @@
-## random(num, ratio)
+## round(num, ratio)
 
 返回 num 四舍五入的值
 
@@ -16,8 +16,8 @@ _ratio: number()_ 保留小数的位数默认值为 `0`
 **实例** 
 
 ``` js
- mmUtil.random(0.8) //1
- mmUtil.random(11.1111, 2) //11.11
+ mmUtil.round(0.8) //1
+ mmUtil.round(11.1111, 2) //11.11
 ```
 
 
