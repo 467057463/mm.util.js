@@ -10,5 +10,11 @@ module.exports = [
       ["docs/number/round", "round-四舍五入"],
       ["docs/number/digitUppercase", "digitUppercase-大写货币"],
     ]
+  },
+  {
+    title: "Lang",
+    children: [
+      ["docs/lang/type", "type-类型"]
+    ]
   }
 ]
