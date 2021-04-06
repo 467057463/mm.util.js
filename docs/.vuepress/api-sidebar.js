@@ -1,5 +1,12 @@
 module.exports = [
   {
+    title: "String",
+    children: [
+      ["docs/string/lineToHump", "lineToHump-下划线转驼峰"],
+      ["docs/string/humpToLine", "humpToLine-驼峰转下划线"],
+    ]
+  },
+  {
     title: "Number",
     children: [
       ["docs/number/add", "add-加"],

@@ -7,6 +7,10 @@ import random from './number/random';
 import digitUppercase from './number/digitUppercase';
 
 import type from './lang/type';
+
+import lineToHump from './string/lineTohump';
+import humpToLine from './string/humpToLine';
+
 export default {
   add,
   sub,
@@ -15,5 +19,9 @@ export default {
   round,
   random,
   digitUppercase,
+  
   type,
+
+  lineToHump,
+  humpToLine
 };
