@@ -7,7 +7,11 @@ import random from './number/random';
 import digitUppercase from './number/digitUppercase';
 import findInRange from './number/findInRange';
 
-import type from './type/type';
+import type from './lang/type';
+
+import lineToHump from './string/lineTohump';
+import humpToLine from './string/humpToLine';
+
 export default {
   add,
   sub,
@@ -17,5 +21,8 @@ export default {
   random,
   digitUppercase,
   findInRange,
+  
   type,
+  lineToHump,
+  humpToLine
 };

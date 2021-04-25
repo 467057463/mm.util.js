@@ -17,16 +17,16 @@ function findInRange(range: number[], value: number, includeStart = true, includ
   if(includeStart && value < first || (includeEnd && value > last)){
     return -1;
   }
-  if(includeEnd && last === value){
-    return range.length - 1;
-  }
   if(!includeStart && value < first){
     return 0;
-  }
-  if(!includeEnd && value === last){
-    return range.length - 1;
-  } 
+  }  
   let index = range.findIndex(item =>  item > value)
+  if(includeEnd && last === value){
+    index = length - 1;
+  }
+  if(!includeEnd && value >= last){
+    index = length;
+  } 
   return index - (includeStart ? 1 : 0);
 }
 
