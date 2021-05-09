@@ -16,7 +16,7 @@ module.exports = {
   deploy : {
     production : {
       user : 'root',
-      host : '80.240.22.42',
+      host : '95.179.164.10',
       ref  : 'origin/master',
       repo : 'git@github.com:467057463/mm.util.git',
       path : '/var/www/mm.util',

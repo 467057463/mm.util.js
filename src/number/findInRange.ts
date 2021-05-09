@@ -7,6 +7,24 @@
  * @returns index
  */
 function findInRange(range: number[], value: number, includeStart = true, includeEnd = true){
+  // const length = range.length;
+  // const first = range[0];
+  // const last = range[length - 1];
+  // if(includeStart && value < first || (includeEnd && value > last)){
+  //   return -1;
+  // }
+  // if(!includeStart){
+  //   range.unshift(Number.MIN_SAFE_INTEGER)
+  // }
+  // if(!includeEnd){
+  //   range.push(Number.MAX_SAFE_INTEGER)
+  // }
+  // let index = range.findIndex(item =>  item > value);
+  // if(includeEnd && last === value){
+  //   index = length - 1;
+  // }
+  // return index - 1;
+
   const length = range.length;
   const first = range[0];
   const last = range[length - 1];
